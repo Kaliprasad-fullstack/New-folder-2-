@@ -1,0 +1,98 @@
+.Auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 100vw; */
+  height: 97vh;
+  background: linear-gradient(-45deg, #70afae, #a2f9ff4a, #a0b9b6);
+  background-size: 400% 400%;
+  animation: wave 5s ease-in-out infinite;
+}
+
+.Auth-form-wrapper {
+  /* width: 576px; */
+  padding-top: 71px;
+  padding-bottom: 70px;
+}
+
+.Auth-form {
+  height: 476x;
+  width: 437px;
+  box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  /* border-radius: 46px; */
+  background-color: white;
+}
+
+.Auth-form-content {
+  /* margin: 6px 0 0 0; */
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.Auth-form-title {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 24px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
+
+.authlabel {
+  display:flex;
+  margin:17px;
+  justify-content: space-evenly;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+.signinform{
+  display: flex;
+  justify-content: space-around;
+  margin: 39px;
+}
+
+.signInbutton{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+@keyframes wave {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .Auth-form {
+    width: 320px;
+    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+  .Auth-form-container {
+    height: 148vh;
+  }
+
+  .Auth-form-wrapper {
+    width: 420px;
+    padding-top: 164px;
+    padding-bottom: 116px;
+  }
+}
